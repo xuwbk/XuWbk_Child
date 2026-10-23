@@ -1,0 +1,296 @@
+/**
+ * 《用户中心布局修复》样式文件
+ * @package XuWbk
+ * @author 轩玮
+ * @version 1.0.0
+ * @created 2025-01-01 00:00:00
+ * @modified 2025-06-23 16:27:00
+ * @description 解决 XuWbk 子主题与 Zibll 父主题用户中心页面的错位问题，由《轩玮博客》开发
+ * @contact QQ:6050640 邮箱：6050640@qq.com 网址：www.xuwbk.com
+ * @copyright Copyright (c) 2025 by XuWbk.Com, All Rights Reserved.
+ */
+
+/* ========================================
+   1. 用户中心 flex 布局稳定性
+   确保 sidebar + content 并排布局不被打乱
+   ======================================== */
+
+/* 修复 .user-center flex 布局 */
+.user-center {
+    display: flex !important;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.user-center .user-center-sidebar {
+    width: 320px !important;
+    flex-shrink: 0;
+    min-width: 280px;
+}
+
+.user-center .user-center-content {
+    width: calc(100% - 340px) !important;
+    flex-grow: 1;
+    min-width: 0; /* 防止内容溢出撑开 */
+}
+
+/* ========================================
+   2. 用户头部描述徽章修复
+   修复 xuwbk_user_center_switcher() 添加的
+   UID/注册天数/总消费/IP位置 徽章溢出问题
+   ======================================== */
+
+/* 头部描述区域允许换行 */
+.author-header .desc {
+    max-width: 100% !important;
+    word-wrap: break-word;
+    line-height: 2.2;
+}
+
+/* 头部徽章统一样式 */
+.author-header .desc .but {
+    display: inline-block;
+    font-size: 12px !important;
+    padding: 3px 10px !important;
+    margin: 3px 5px 3px 0;
+    line-height: 1.5 !important;
+    border-radius: 12px !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* SVG 图标在徽章中的对齐 */
+.author-header .desc .but .icon {
+    width: 0.9em;
+    height: 0.9em;
+    vertical-align: -0.15em;
+    margin-right: 2px;
+}
+
+/* ========================================
+   3. 用户头部信息区域修复
+   ======================================== */
+
+/* 头像和信息区域对齐 */
+.author-header .header-info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.author-header .header-info > .flex1 {
+    flex: 1;
+    min-width: 0;
+}
+
+/* 昵称区域 */
+.author-header .display-name {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* 用户身份徽章区域 */
+.author-header .user-identity {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+/* ========================================
+   4. 头部按钮区域修复
+   防止按钮换行错位
+   ======================================== */
+
+.author-header .header-btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.author-header .cover-btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* ========================================
+   5. 用户中心导航修复
+   ======================================== */
+
+.user-center-nav .tab-nav-theme {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-center-nav .tab-nav-theme > li {
+    white-space: nowrap;
+}
+
+/* ========================================
+   6. 悬浮导航栏用户中心适配
+   在用户中心页面减少与侧边栏的冲突
+   ======================================== */
+
+/* 在用户中心页面，悬浮导航稍微调整位置 */
+.page-user-center .comfortable-nav,
+.user-center-parent .comfortable-nav {
+    right: 15px;
+}
+
+/* 确保悬浮导航不影响页面滚动 */
+.page-user-center .comfortable-nav {
+    pointer-events: auto;
+}
+
+/* VIP 面板在用户中心页面的 z-index */
+.page-user-center .vip-panel,
+.page-user-center .lottery-panel,
+.page-user-center .service-panel,
+.page-user-center .qrcode-panel {
+    z-index: 10001;
+}
+
+/* ========================================
+   7. 响应式修复 (<= 767px)
+   确保移动端叠放布局正常
+   ======================================== */
+
+@media (max-width: 767px) {
+    /* 移动端用户中心全宽布局 */
+    .user-center {
+        flex-wrap: wrap;
+    }
+
+    .user-center .user-center-sidebar,
+    .user-center .user-center-content {
+        width: 100% !important;
+        flex-shrink: 1;
+    }
+
+    /* 移动端头部适配 */
+    .author-header .header-content {
+        padding: 12px 15px !important;
+    }
+
+    .author-header .header-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .author-header .header-info > .header-avatar {
+        margin-right: 0 !important;
+        margin-bottom: 12px;
+    }
+
+    .author-header .display-name {
+        justify-content: center;
+    }
+
+    .author-header .user-identity {
+        justify-content: center;
+    }
+
+    .author-header .desc {
+        text-align: center;
+    }
+
+    .author-header .header-btns {
+        position: static;
+        justify-content: center;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    .author-header .cover-btns {
+        justify-content: center;
+    }
+
+    /* 悬浮导航移动端适配 */
+    .comfortable-nav {
+        right: 5px;
+        gap: 8px;
+    }
+
+    .nav-item {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* ========================================
+   8. 中屏适配 (768px - 991px)
+   ======================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .user-center .user-center-sidebar {
+        width: 260px !important;
+        min-width: 240px;
+    }
+
+    .user-center .user-center-content {
+        width: calc(100% - 280px) !important;
+    }
+
+    .author-header .avatar-img {
+        --this-size: 110px;
+    }
+
+    .author-header .header-info > .header-avatar {
+        margin-top: -70px;
+    }
+
+    .author-header .header-content {
+        padding: 15px 30px;
+    }
+}
+
+/* ========================================
+   9. 用户中心 Tab 内容区域修复
+   ======================================== */
+
+/* 确保 Tab 内容不会溢出 */
+.user-center .tab-content {
+    overflow: hidden;
+    width: 100%;
+}
+
+.user-center .tab-content > .tab-pane {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 修复用户管理 Tab 内容 */
+#user-tab-user-manage .zib-widget {
+    overflow: hidden;
+}
+
+/* ========================================
+   10. 全局补丁 - 防止子主题 CSS 破坏布局
+   ======================================== */
+
+/* 确保帖子列表中 posts-row 不影响用户中心 */
+.user-center .posts-row {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+}
+
+/* 重新声明父主题关键属性 */
+.user-center,
+.user-center *,
+.user-center *::before,
+.user-center *::after {
+    box-sizing: border-box;
+}
+
+/* 确保 .container 在用户中心页面正确居中 */
+.page-user-center .container {
+    padding-left: 18px;
+    padding-right: 18px;
+}

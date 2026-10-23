@@ -1,0 +1,55 @@
+/**
+ * 单行文章列表布局 - 根据后台设置动态调整
+ * @package XuWbk
+ */
+
+/* Swiper容器基础样式 */
+.swiper-container.swiper-scroll {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Swiper包装器 - 必须设置为flex */
+.swiper-scroll .swiper-wrapper {
+    display: flex !important;
+    transition-timing-function: ease-out;
+}
+
+/* 每个文章项基础样式 */
+.swiper-scroll .swiper-wrapper .posts-item {
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+}
+
+/* 根据data-slidesPerView属性动态设置宽度 */
+.swiper-container.swiper-scroll[data-slidesperview="3"] .swiper-wrapper > .posts-item {
+    width: calc(33.333333% - 26.666667px) !important;
+    flex: 0 0 calc(33.333333% - 26.666667px) !important;
+}
+.swiper-container.swiper-scroll[data-slidesperview="4"] .swiper-wrapper > .posts-item {
+    width: calc(25% - 20px) !important;
+    flex: 0 0 calc(25% - 20px) !important;
+}
+.swiper-container.swiper-scroll[data-slidesperview="5"] .swiper-wrapper > .posts-item {
+    width: calc(20% - 16px) !important;
+    flex: 0 0 calc(20% - 16px) !important;
+}
+.swiper-container.swiper-scroll[data-slidesperview="6"] .swiper-wrapper > .posts-item {
+    width: calc(16.666667% - 13.333333px) !important;
+    flex: 0 0 calc(16.666667% - 13.333333px) !important;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .swiper-container.swiper-scroll[data-slidesperview] .swiper-wrapper > .posts-item {
+        width: calc(33.333% - 13.333333px) !important;
+        flex: 0 0 calc(33.333% - 13.333333px) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-container.swiper-scroll[data-slidesperview] .swiper-wrapper > .posts-item {
+        width: calc(50% - 10px) !important;
+        flex: 0 0 calc(50% - 10px) !important;
+    }
+}

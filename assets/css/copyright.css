@@ -1,0 +1,203 @@
+/* 版权声明样式一 */
+.posts-copyright {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.entry-copyright {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.badg {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.badg-sm {
+    padding: 1px 6px;
+    font-size: 11px;
+}
+
+.c-yellow { background-color: #fff3cd; color: #856404; }
+.c-red { background-color: #f8d7da; color: #721c24; }
+.c-purple { background-color: #e2d9f3; color: #383d41; }
+.c-blue { background-color: #d1ecf1; color: #0c5460; }
+.c-green { background-color: #d4edda; color: #155724; }
+
+.mr3 { margin-right: 12px; }
+.px12 { padding: 12px; }
+
+/* 版权声明样式二 */
+.copyright-style-2 {
+    margin: 20px 0;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.copyright-style-2 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright-style-2 a:hover {
+    text-decoration: underline;
+}
+
+/* 版权声明样式三 */
+.copyright-style-3 {
+    margin: 20px 0;
+    padding: 20px;
+    background: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 15px;
+    border-left: 5px solid #1e7e34;
+}
+
+.copyright-style-3 a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright-style-3 a:hover {
+    text-decoration: underline;
+}
+
+/* 版权声明样式四 */
+.copyright-style-4 {
+    margin: 20px 0;
+    padding: 15px;
+    background: #17a2b8;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 2px solid #138496;
+}
+
+.copyright-style-4 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(255,255,255,0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.copyright-style-4 a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* 版权声明样式五 */
+.copyright-style-5 {
+    margin: 20px 0;
+    padding: 18px;
+    background: #ffc107;
+    color: #212529;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.copyright-style-5 a {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright-style-5 a:hover {
+    text-decoration: underline;
+}
+
+/* 版权声明样式六 */
+.copyright-style-6 {
+    margin: 20px 0;
+    padding: 15px;
+    background: #6c757d;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-top: 3px solid #495057;
+    border-bottom: 3px solid #495057;
+}
+
+.copyright-style-6 a {
+    color: #17a2b8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright-style-6 a:hover {
+    color: #138496;
+    text-decoration: underline;
+}
+
+/* 版权声明样式七 */
+.copyright-style-7 {
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.copyright-style-7 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+    padding: 3px 8px;
+    border-radius: 15px;
+    margin: 0 3px;
+}
+
+.copyright-style-7 a:hover {
+    background: rgba(255,255,255,0.3);
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .posts-copyright,
+    .copyright-style-2,
+    .copyright-style-3,
+    .copyright-style-4,
+    .copyright-style-5,
+    .copyright-style-6,
+    .copyright-style-7 {
+        margin: 15px 0;
+        padding: 12px;
+        font-size: 13px;
+    }
+    
+    .entry-copyright {
+        font-size: 12px;
+    }
+    
+    .badg {
+        margin-right: 6px;
+    }
+}

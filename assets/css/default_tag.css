@@ -1,0 +1,98 @@
+/*
+ * Default Tag CSS for XuWbk Theme
+ * 默认标签样式文件
+ */
+
+/* 默认标签样式 */
+.default-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 2px 4px 2px 0;
+    background-color: #f0f0f0;
+    color: #666;
+    font-size: 12px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.default-tag:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    text-decoration: none;
+}
+
+/* 不同颜色的标签 */
+.default-tag.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.default-tag.primary:hover {
+    background-color: #0056b3;
+}
+
+.default-tag.secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.default-tag.secondary:hover {
+    background-color: #545b62;
+}
+
+.default-tag.success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.default-tag.success:hover {
+    background-color: #1e7e34;
+}
+
+.default-tag.danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.default-tag.danger:hover {
+    background-color: #c82333;
+}
+
+.default-tag.warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.default-tag.warning:hover {
+    background-color: #e0a800;
+}
+
+.default-tag.info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.default-tag.info:hover {
+    background-color: #138496;
+}
+
+/* 大小变体 */
+.default-tag.large {
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+.default-tag.small {
+    padding: 1px 6px;
+    font-size: 11px;
+}
+
+/* 圆角变体 */
+.default-tag.rounded {
+    border-radius: 20px;
+}
+
+.default-tag.square {
+    border-radius: 0;
+}

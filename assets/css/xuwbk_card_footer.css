@@ -1,0 +1,75 @@
+/*
+	Theme Name: 子比主题 Child
+	Description: Zibll 子比主题专为商城、论坛、圈子博客、自媒体、资讯类的网站设计开发，采用简约优雅的设计风格让网站更具美感，创新的前端模块化功能配置和全面的前端用户功能，以及快捷的支付功能、全面的用户功能以及强大的社区论坛功能使子比主题成为更适合现代化网站的优雅主题！ <a target="_blank" href="https://www.zibll.com">访问官网</a>
+	Theme URI: https://www.zibll.com
+	Author: 瑞浩网络-Qinver
+	Author URI: https://www.zibll.com
+	Requires at least: 5.0
+	Requires PHP: 7.0-8.2
+	Version: 8.1
+    Template: zibll
+	Tags: 社区、论坛、圈子、商城、中文、博客、科技、简约、付费阅读、付费下载、扁平化、用户中心、网址导航、熊掌号、垂直站点、SEO优化、响应式、增强编辑器
+*/
+/*文章卡片下载按钮 xuwbk.com*/
+a.down {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #4f6dee, #67bdf9);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 新文章发布图标样式 xuwbk.com */
+.posts-item{ 
+    position: relative; 
+    overflow: visible; 
+}
+.zbfox_new_post_label{ 
+    position: absolute; 
+    top: 45px; 
+    right: 20px; 
+    padding: 5px 10px; 
+    background: #4f15ff; 
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    font-size: 13px; 
+    font-weight: 900; 
+    border-radius: 5px 0 0 5px; 
+}
+.posts-item:hover .zbfox_new_post_label { 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+.zbfox_new_post_label:before { 
+    position: absolute; 
+    content: " "; 
+    display: block; 
+    width: 15px; 
+    height: 110%; 
+    padding: 0 0 5px; 
+    top: 0; 
+    right: -5px; 
+    background: inherit; 
+    border-radius: 0 5px 5px 0; 
+}
+.zbfox_new_post_label:after { 
+    position: absolute; 
+    content: " "; 
+    display: block; 
+    width: 5px; 
+    height: 5px; 
+    background: rgba(0, 0, 0, 0.35); 
+    bottom: -3px; 
+    right: -5px; 
+    border-radius: 0 5px 5px 0; 
+}

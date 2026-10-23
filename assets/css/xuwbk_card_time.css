@@ -1,0 +1,78 @@
+/*
+	Theme Name: 子比主题 Child
+	Description: Zibll 子比主题专为商城、论坛、圈子博客、自媒体、资讯类的网站设计开发，采用简约优雅的设计风格让网站更具美感，创新的前端模块化功能配置和全面的前端用户功能，以及快捷的支付功能、全面的用户功能以及强大的社区论坛功能使子比主题成为更适合现代化网站的优雅主题！ <a target="_blank" href="https://www.zibll.com">访问官网</a>
+	Theme URI: https://www.zibll.com
+	Author: 瑞浩网络-Qinver
+	Author URI: https://www.zibll.com
+	Requires at least: 5.0
+	Requires PHP: 7.0-8.2
+	Version: 8.1
+    Template: zibll
+	Tags: 社区、论坛、圈子、商城、中文、博客、科技、简约、付费阅读、付费下载、扁平化、用户中心、网址导航、熊掌号、垂直站点、SEO优化、响应式、增强编辑器
+*/
+.tools {
+    display: flex;
+    align-items: center;
+    margin-top: -3px;
+    margin-bottom: 5px;
+    height: 22px;
+}
+.circle {
+    padding: 0 4px;
+}
+
+.zbbox {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #2997f7;
+}
+
+.yellow {
+    background-color: #ff5144;
+}
+
+.green {
+    background-color: #bfc930;
+}
+
+span.zbbox_soft_time {
+    font-size: 14px;
+    color: #787777;
+    margin-left: auto;
+    margin-right: 5px;
+    right: 0;
+    pointer-events: none;
+}
+
+.zbbox_soft_time svg {
+    margin-right: 2px;
+}
+
+@media screen and (max-width: 1221px) {
+    .zbbox_posts_wap { 
+        display: none;
+    }
+}
+
+.wppc {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .wppc {
+        display: block !important;
+    }
+}        
+
+/* 首页文章卡片背景 */
+.posts-item.card {
+padding: 10px 10px 10px 10px!important;
+background: url('https://www.dsdnn.cn/wp-content/uploads/2025/08/20250807190050574-2.png') no-repeat,linear-gradient(to bottom,#ECF5FF,#FFFFFF);
+}

@@ -1,0 +1,26 @@
+/*
+ * 文章商用声明样式
+ */
+
+.shangye {
+    color: #fff;
+    background: #5282f7 url(../images/post/shangye.png) 15px center no-repeat;
+    background-size: 30px 30px;
+    border: 1px solid #5282f7;
+    overflow: hidden;
+    margin: 20px 0;
+    padding: 15px 15px 15px 55px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 2px 8px rgba(82, 130, 247, 0.3);
+}
+
+.shangye a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.shangye a:hover {
+    color: #e6f0ff;
+}
