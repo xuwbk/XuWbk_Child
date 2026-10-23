@@ -1,0 +1,13 @@
+{
+    "pluginName": "lv",
+    "pluginSlug": "",
+    "pluginVersion": "1.0",
+    "pluginUrl": "",
+    "authorName": "",
+    "authorUrl": "",
+    "requiredWpVersion": "4.7",
+    "testedWpVersion": "6.6.1",
+    "shortDescription": "\u81ea\u5b9a\u4e49\u7ba1\u7406\u4e3b\u9898 \u4f7f\u7528 Admin Menu Editor Pro \u63d2\u4ef6\u751f\u6210.",
+    "identifierPrefix": "Lv1046c7db022819",
+    "wasEverConfirmed": true
+}
